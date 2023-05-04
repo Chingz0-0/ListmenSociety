@@ -28,10 +28,12 @@ public class EnemyAttackpatternOne : MonoBehaviour
 
         if (Vector2.Distance(transform.position, player.position) < 5f)
         {
+            speed = 9;
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
         else
         {
+            speed = 2;
             MoveToNextPoint();
         }
     }
