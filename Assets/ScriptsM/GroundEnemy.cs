@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttackpatternOne : MonoBehaviour
+public class GroundEnemy : MonoBehaviour
 {
     public Transform player;
     // reference for my waypoints
@@ -15,24 +15,23 @@ public class EnemyAttackpatternOne : MonoBehaviour
     private int idChangeValue = 1;
 
     // sets our speed of the enemy
-    public float speed = 2;
+   public float speed = 2;
     // Update is called once per frame
-    public int enemyHealth = 3;
-    void Update()
+    public bool isFlipped;
+    public Player_Movement playerMovement;
+    void FixedUpdate()
     {
-       
-        if(enemyHealth <= 0f)
-        {
-            Destroy(gameObject);
-        }
 
-        if (Vector2.Distance(transform.position, player.position) < 5f)
+        if (Vector2.Distance(transform.position, player.position) < 4f)
         {
+            LookatPlayer(); 
+
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
         else
         {
             MoveToNextPoint();
+            
         }
     }
 
@@ -73,4 +72,50 @@ public class EnemyAttackpatternOne : MonoBehaviour
             nextId += idChangeValue;
         }
     }
+    public void LookatPlayer()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.z *= 1f;
+
+        if (transform.position.x > player.position.x && isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0, 180, 0);
+            isFlipped = false;
+        }
+        if (transform.position.x < player.position.x && !isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0, 180, 0);
+            isFlipped = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            var healthComponent = collision.GetComponent<Health>();
+             if(healthComponent != null)
+             {
+                playerMovement.KBCounter = playerMovement.KBTolalTIme;
+                if(collision.transform.position.x <= transform.position.x)
+                {
+                    playerMovement.knockFromRight = true;
+                }
+                if (collision.transform.position.x > transform.position.x)
+                {
+                    playerMovement.knockFromRight = false;
+                }
+                healthComponent.TakeDamage(1);
+             }
+        }
+    }
+
+     IEnumerator Speed()
+     {
+        speed = 4;
+        yield return new WaitForSeconds(5);
+        speed = 2;
+     }
 }

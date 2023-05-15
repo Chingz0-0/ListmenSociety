@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
@@ -14,10 +15,14 @@ public class Player_Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool facingRight = true;
-    private float moveDirection;
+    public float moveDirection;
     private bool isJumping = false;
     public bool isGrounded;
     public int jumpCount;
+    public float KBForce;
+    public float KBCounter;
+    public float KBTolalTIme;
+    public bool knockFromRight;
 
     private void Start()
     {
@@ -42,6 +47,23 @@ public class Player_Movement : MonoBehaviour
     // Better for handling Physics, can be called multiply times per update frame.
     private void FixedUpdate()
     {
+        if(KBCounter <= 0)
+        {
+            rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            if(knockFromRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce, KBForce);
+            }
+            if (knockFromRight == false)
+            {
+                rb.velocity = new Vector2(KBForce, KBForce);
+            }
+            KBCounter -= Time.deltaTime;
+        }
+
         // CHeck if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
         if (isGrounded)
@@ -79,46 +101,23 @@ public class Player_Movement : MonoBehaviour
     {
         moveDirection = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) & jumpCount > 0)
+        if (Input.GetButtonDown("Jump") && jumpCount > 0)
         {
             isJumping = true;
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+
+        }
+    }
     private void flipcharacter()
-    {
+    { 
+
         facingRight = !facingRight; // Inverse bool
 
         transform.Rotate(0f, 180f, 0f);
     }
-
-    IEnumerator PowerUpSpeed()
-    {
-        moveSpeed = 9;
-        yield return new WaitForSeconds(5);
-        moveSpeed = 5;
-    }
-
-    public void SpeedPowerUp()
-    {
-        StartCoroutine(PowerUpSpeed());
-    }
-
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "movingPlatform")
-        {
-            transform.parent = col.transform;
-        }
-
-
-    }
-
-    private void OnCollisionExit2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "movingPlatform")
-        { transform.parent = null; }
-
-
-    }
+    
+    
 }

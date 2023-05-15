@@ -189,9 +189,9 @@ GameObject:
   - component: {fileID: 6525966788674797314}
   - component: {fileID: 6525966788674797316}
   - component: {fileID: 6525966788674797317}
-  - component: {fileID: 6525966788674797368}
-  - component: {fileID: 6525966788674797319}
   - component: {fileID: 6525966788674797369}
+  - component: {fileID: 8088505659657496660}
+  - component: {fileID: 2415704294635650809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -317,48 +317,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6525966788674797368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525966788674797312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: defa918eb53fb2e4ca2a03c67929e3aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpforce: 100
-  ceilingCheck: {fileID: 6525966788176256808}
-  groundCheck: {fileID: 6525966788519261419}
-  groundObjects:
-    serializedVersion: 2
-    m_Bits: 8
-  checkRadius: 0.5
-  maxJumpCount: 1
-  isGrounded: 1
-  jumpCount: 0
---- !u!114 &6525966788674797319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525966788674797312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48b604006357a2b4e876f8a2f8551fa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBtwAttack: 0.3
-  attackPos: {fileID: 6525966787347748170}
-  attackRange: 1.24
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 64
-  damage: 1
 --- !u!114 &6525966788674797369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,3 +339,47 @@ MonoBehaviour:
   - {fileID: 0}
   fullHearts: {fileID: 77598063, guid: 06fe5c2ea3680384aa34322e17fad03f, type: 3}
   emptyHearts: {fileID: 127039019, guid: 06fe5c2ea3680384aa34322e17fad03f, type: 3}
+--- !u!114 &8088505659657496660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525966788674797312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723f44be62c2e4a4fa3f96fe42d5e27e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  jumpforce: 100
+  ceilingCheck: {fileID: 6525966788176256808}
+  groundCheck: {fileID: 6525966788519261419}
+  groundObjects:
+    serializedVersion: 2
+    m_Bits: 8
+  checkRadius: 0.5
+  maxJumpCount: 1
+  moveDirection: 0
+  isGrounded: 0
+  jumpCount: 0
+  playerHealth: 9
+--- !u!114 &2415704294635650809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525966788674797312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a6153284eab194188fc2fee8fc5c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBtwAttack: 3
+  attackPos: {fileID: 6525966787347748170}
+  attackRange: 0.6
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 2
