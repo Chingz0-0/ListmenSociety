@@ -54,14 +54,15 @@ public class Health : MonoBehaviour
     
     }
    public void TakeDamage(int amount)
-    {
-        health -= amount;
-        StartCoroutine(Invunerability());
+   { 
+      StartCoroutine(Invunerability());
         if(health <= 0)
         {
             Destroy(gameObject);
         }
-    }
+        health -= amount;
+       
+   }
 
    // public void Heal(int amount)
     //{

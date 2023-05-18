@@ -19,20 +19,24 @@ public class FlyingEnemy : MonoBehaviour
     public float speed = 2;
     // Update is called once per frame
     public float timer;
-    public float cooldown;
+    
     public bool isFlipped;
+
+    private Rigidbody2D rb;
 
     private void Start()
     {
-       
+        rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
         LookatPlayer();
 
-        if (Vector2.Distance(transform.position, player.position) < 5f)
+        if (Vector2.Distance(transform.position, player.position) < 10f)
         {
-           
+            LookatPlayer();
+
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2( player.position.x, rb.position.y ), speed * Time.deltaTime);
         }
         else
         {

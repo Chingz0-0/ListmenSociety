@@ -59,7 +59,8 @@ public class Player_Movement : MonoBehaviour
             }
             if (knockFromRight == false)
             {
-                rb.velocity = new Vector2(KBForce, KBForce);
+                rb.velocity = new Vector2(KBForce
+                    , KBForce);
             }
             KBCounter -= Time.deltaTime;
         }
