@@ -8,6 +8,8 @@ TagManager:
   - OneWayPlatforms
   - OneWayPlatform
   - Door
+  - EnDoor
+  - ExDoor
   layers:
   - Default
   - TransparentFX
