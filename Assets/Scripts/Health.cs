@@ -56,36 +56,29 @@ public class Health : MonoBehaviour
    public void TakeDamage(int amount)
    { 
       StartCoroutine(Invunerability());
-        if(health <= 0)
+
+        health -= amount;
+       if(health <= 0)
         {
             Destroy(gameObject);
         }
-        health -= amount;
-       
    }
 
-   // public void Heal(int amount)
-    //{
-       // if (amount < 0)
-        //{
-            //throw new System.ArgumentOutOfRangeException("Cannot have a negative Healthing");
-       // }
-
-        //bool wouldbeOverMaxHealth = health + amount > MAX_HEALTH
-
-       // if (wouldbeOverMaxHealth)
-       // {
-            //this.health = MAX_HEALTH;
-        //}
-       // else
-        //{
-           // this.health += amount;
-       // }
-
-    //}
+   public void Heal()
+   {
+        if (health == 5)
+        {
+            return;
+        }
+        else 
+        {
+            health = 5;
+        }
+   }
     private IEnumerator Invunerability()
     {
         Physics2D.IgnoreLayerCollision(1, 2, true);
+
         for(int v = 0; v < numberOfFlashes; v++)
         {
             spriteRend.color = new Color(1, 0, 0, 0.5f);

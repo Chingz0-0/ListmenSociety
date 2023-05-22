@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-    private int damage = 10;
+    public int damage = 10;
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.GetComponent<EnemyHealth>() != null)

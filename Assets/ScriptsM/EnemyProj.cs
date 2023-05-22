@@ -41,16 +41,6 @@ public class EnemyProj : MonoBehaviour
             {
                 healthComponent.TakeDamage(2);
                 Destroy(gameObject);
-                playerMovement.KBCounter = playerMovement.KBTolalTIme;
-
-                if (collision.transform.position.x <= transform.position.x)
-                {
-                    playerMovement.knockFromRight = true;
-                }
-                if (collision.transform.position.x > transform.position.x)
-                {
-                    playerMovement.knockFromRight = false;
-                }
                 
             }
         }
