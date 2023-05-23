@@ -9,6 +9,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     public void LookatPlayer()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
 
@@ -16,13 +17,13 @@ public class Boss : MonoBehaviour
         {
             transform.localScale = flipped;
             transform.Rotate(0, 180, 0);
-            isFlipped = false;
+            isFlipped = true;
         }
         if (transform.position.x < player.position.x && !isFlipped)
         {
             transform.localScale = flipped;
             transform.Rotate(0, 180, 0);
-            isFlipped = true;
+            isFlipped = false ;
         }
     }
 }

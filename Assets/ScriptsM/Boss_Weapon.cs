@@ -26,6 +26,10 @@ public class Boss_Weapon : MonoBehaviour
 
     public void Attack2()
     {
+        // locate player 
+        // create a proj
+        // launch proj @ player
+        // after attack it will take 10 seconds to attack again
         Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
