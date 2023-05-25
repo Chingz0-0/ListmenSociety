@@ -195,7 +195,10 @@ GameObject:
   - component: {fileID: -8460958850857606416}
   - component: {fileID: -3538245207905978144}
   - component: {fileID: -8428466282954421631}
+<<<<<<< HEAD
   - component: {fileID: 4046497775173126230}
+=======
+>>>>>>> 4b9b44eb83583e8b5d21381a066cfea58e3e5e0c
   - component: {fileID: -8544885257804440894}
   m_Layer: 0
   m_Name: Player
@@ -423,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capacity: 10
+<<<<<<< HEAD
 --- !u!114 &4046497775173126230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,6 +440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollier: {fileID: 0}
+=======
+>>>>>>> 4b9b44eb83583e8b5d21381a066cfea58e3e5e0c
 --- !u!114 &-8544885257804440894
 MonoBehaviour:
   m_ObjectHideFlags: 0
