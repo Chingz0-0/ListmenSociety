@@ -42,6 +42,7 @@ public class Player_Movement : MonoBehaviour
     // Better for handling Physics, can be called multiply times per update frame.
     private void FixedUpdate()
     {
+
         // CHeck if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
         if (isGrounded)
@@ -66,6 +67,7 @@ public class Player_Movement : MonoBehaviour
     private void Animate()
     {
         if (moveDirection > 0 && !facingRight)
+
         {
             flipcharacter();
         }

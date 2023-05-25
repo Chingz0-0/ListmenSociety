@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33d3c248fc466784fa542f30c57ee263
+guid: c49a7591eb33e694c89457e4f023eadb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -164,13 +164,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin 2.0_0
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_0
       rect:
         serializedVersion: 2
-        x: 711
-        y: 3088
-        width: 53
-        height: 82
+        x: 44
+        y: 674
+        width: 120
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad0fa6ad713f8e46b0dd9f2b3c18639
-      internalID: 1718199721
+      spriteID: 448dea776be8abb4082288582bd60174
+      internalID: 1790343456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin 2.0_1
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_1
       rect:
         serializedVersion: 2
-        x: 1263
-        y: 3076
-        width: 89
-        height: 87
+        x: 228
+        y: 711
+        width: 55
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,19 +199,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb9a340173c390e4f83f2d1b614348bd
-      internalID: -355061850
+      spriteID: e53475dabec2a994fb0b36f1e8c28eb7
+      internalID: 125122416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin 2.0_2
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_2
       rect:
         serializedVersion: 2
-        x: 2133
-        y: 2988
-        width: 89
+        x: 333
+        y: 675
+        width: 131
         height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -220,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1858535b39f984aa15101e983cd43d
-      internalID: 977288440
+      spriteID: dcdf40260588d0547b60d11858427ad2
+      internalID: 364027311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin 2.0_3
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_3
       rect:
         serializedVersion: 2
-        x: 494
-        y: 2221
-        width: 90
-        height: 86
+        x: 33
+        y: 375
+        width: 131
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0fcb276935b75946a29dc50b2bac85e
-      internalID: -836379179
+      spriteID: fde70ea45e26c3b4da900122727fca70
+      internalID: 1077291344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin 2.0_4
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_4
       rect:
         serializedVersion: 2
-        x: 1360
-        y: 2125
-        width: 97
-        height: 92
+        x: 333
+        y: 375
+        width: 158
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16f755dc7c88f444a990de061300c55
-      internalID: -1978165496
+      spriteID: 7e7c72fb08b783744b09e191ec84785c
+      internalID: 1852871553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin 2.0_5
+      name: Wolf Boss 2.4 melee (Foxy) w_ hammer_5
       rect:
         serializedVersion: 2
-        x: 2215
-        y: 2167
-        width: 7
-        height: 7
+        x: 33
+        y: 69
+        width: 131
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,134 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c0362e12efc25342bba3b32175ab78a
-      internalID: 1863951168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_6
-      rect:
-        serializedVersion: 2
-        x: 2349
-        y: 2125
-        width: 77
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bd1bc6cbe6e40f4fb1d32eaa1f23522
-      internalID: 1824168943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_7
-      rect:
-        serializedVersion: 2
-        x: 613
-        y: 1348
-        width: 69
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afc7cb1a9afa63e439386e2581884cb2
-      internalID: 1059389380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_8
-      rect:
-        serializedVersion: 2
-        x: 1581
-        y: 1348
-        width: 53
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81e0a8cb032bb654ab627f0797b73e9c
-      internalID: -1088840749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_9
-      rect:
-        serializedVersion: 2
-        x: 2451
-        y: 1258
-        width: 53
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38054b0f0e10daa4a97a5667b072b5dd
-      internalID: 226150790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_10
-      rect:
-        serializedVersion: 2
-        x: 788
-        y: 478
-        width: 22
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34c77a7434b27044cbe127719b5ecafa
-      internalID: 304810609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin 2.0_11
-      rect:
-        serializedVersion: 2
-        x: 1658
-        y: 388
-        width: 22
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42a5be8b6f9070046accdb32c8a10f0e
-      internalID: 150608352
+      spriteID: e216ab9314b02fe438017c039694e976
+      internalID: 2130412897
       vertices: []
       indices: 
       edges: []
@@ -426,18 +300,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coin 2.0_9: 226150790
-      Coin 2.0_2: 977288440
-      Coin 2.0_4: -1978165496
-      Coin 2.0_1: -355061850
-      Coin 2.0_6: 1824168943
-      Coin 2.0_7: 1059389380
-      Coin 2.0_5: 1863951168
-      Coin 2.0_3: -836379179
-      Coin 2.0_0: 1718199721
-      Coin 2.0_8: -1088840749
-      Coin 2.0_11: 150608352
-      Coin 2.0_10: 304810609
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_1: 125122416
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_4: 1852871553
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_2: 364027311
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_5: 2130412897
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_0: 1790343456
+      Wolf Boss 2.4 melee (Foxy) w_ hammer_3: 1077291344
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
