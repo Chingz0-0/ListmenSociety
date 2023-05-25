@@ -12,13 +12,14 @@ public class Power_Potion : MonoBehaviour
 
        strengthComponent.damage = 20;
         speedComponent.moveSpeed = 10;
+           Destroy(gameObject);
 
         yield return new WaitForSeconds(60);
 
         strengthComponent.damage = 10;
         speedComponent.moveSpeed = 8;
 
-            Destroy(gameObject);
+            
       }
     public void OnTriggerEnter2D(Collider2D collision)
     {

@@ -17,13 +17,13 @@ public class Boss : MonoBehaviour
         {
             transform.localScale = flipped;
             transform.Rotate(0, 180, 0);
-            isFlipped = true;
+            isFlipped = false;
         }
         if (transform.position.x < player.position.x && !isFlipped)
         {
             transform.localScale = flipped;
             transform.Rotate(0, 180, 0);
-            isFlipped = false ;
+            isFlipped = true ;
         }
     }
 }

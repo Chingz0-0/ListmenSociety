@@ -14,13 +14,14 @@ public class Health : MonoBehaviour
    [SerializeField] private float IFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-
+    Power_Potion potionUp;
     // Start is called before the first frame update
     void Start()
     {
         health = 5;
         numOfHearts = 5;
         spriteRend = GetComponent<SpriteRenderer>();
+        potionUp = GetComponent<Power_Potion>();
     }
 
     // Update is called once per frame
@@ -87,4 +88,5 @@ public class Health : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(1, 2, false);
     }
+
 }
